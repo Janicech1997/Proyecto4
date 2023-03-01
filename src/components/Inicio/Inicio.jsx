@@ -1,16 +1,15 @@
 import React from "react";
+import Contactos from "../Contactos/Contactos";
+import classes from "./Inicio.module.css"
 
 const Inicio = () => {
   return (
-    <>
-            <h2 style={{textAlign: 'center', color:'white', margin:100}}>
-                Bienvenidos al Restaurant ZEN WEI, estamos para darte el mejor servicio.  
-            </h2>
-            <div style={{width: '70%', margin: 'auto auto auto auto'}}>
-              <p>Contactanos</p>
-                <Searchbar/>
-            </div>
-        </>
+    <div className={classes.inicio}>
+      <h1>Bienvenidos al Restaurante ZEN WEI</h1>
+      <p>Disfruta de la varidad de platos tipicos Ecuatorianos versión vegetariano</p>
+      <button className={classes.boton} onClick={Contactos}>Contactanos</button>
+
+    </div>
   );
 };
 

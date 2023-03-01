@@ -1,22 +1,21 @@
-import React from "react";
+import { Route, createRoutesFromElements, createBrowserRouter, RouterProvider } from "react-router-dom";
+import Layout from './Layout';
+import ErrorBoundary from './ErrorBoundary/ErrorBoundary';
+import Inicio from './components/Inicio/Inicio';
+import Meals from './components/Meals/Meals';
+import Contactos from './components/Contactos/Contactos';
 
-import CartProvider from "./context/CartProvider";
-import Cart from "./components/Cart/Cart";
-import Header from "./components/Layout/Header";
-import Meals from "./components/Meals/Meals";
-import Footer from "./components/Layout/Footer";
+const routesFromElements = createRoutesFromElements(
+  <Route element={<Layout />}>
+    <Route index element={<Inicio />} />
+    <Route path='/' element={<Inicio />} />
+    <Route path='/menu' element={<Meals />} errorElement={<ErrorBoundary />} />
+    <Route path="/contacto" element={<Contactos />} errorElement={<ErrorBoundary />} />
+  </Route>
+);
 
-function App() {
-  return (
-    <CartProvider>
-      <Cart />
-      <Header />
-      <main>
-        <Meals />
-      </main>
-      <Footer />
-    </CartProvider>
-  );
-}
+const router = createBrowserRouter(routesFromElements);
 
-export default App;
+export const App = () => {
+  return <RouterProvider router={router} />;
+};

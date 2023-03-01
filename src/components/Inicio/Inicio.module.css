@@ -1,0 +1,22 @@
+.inicio {
+    margin: 0cm;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    justify-content: center;
+    padding-left: 350px;
+    font-size: 150%;
+    padding-top: 15px;
+}
+
+.boton {
+    padding: 18px 55px;
+    background-color: #eb5916;
+    border-radius: 50px;
+    color: #000000;
+    font-weight: 600;
+    border: none;
+    font-size: 18px;
+    cursor: pointer;
+    margin-bottom: 40px;
+    margin-top: 40px;
+}
+

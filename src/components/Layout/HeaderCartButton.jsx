@@ -51,15 +51,13 @@ const HeaderCartButton = () => {
   }, [cartContext.cartItems]);
 
   return (
-      <button className={btnClasses} >
-        <button className={classes.button}>Inicio</button>
-        <button className={classes.button}>Contacto</button>
-        <span className={classes.icon} onClick={showCart}>
-          <CartIcon />
-        </span>
-        <span className={classes.label} onClick={showCart}>AÑADIR CARRITO</span>
-        <span className={classes.badge} onClick={showCart}>{numberOfItemsInCart}</span>
-      </button>
+    <button className={btnClasses} onClick={showCart}>
+      <span className={classes.icon} >
+        <CartIcon />
+      </span>
+      <span className={classes.label} >AÑADIR CARRITO</span>
+      <span className={classes.badge} >{numberOfItemsInCart}</span>
+    </button>
   );
 };
 
