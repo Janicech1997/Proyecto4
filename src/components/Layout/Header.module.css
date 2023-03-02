@@ -25,7 +25,7 @@
   width: 110%;
   height: 100%;
   object-fit: cover;
-  transform: rotateZ(-5deg) translateY(-4rem) translateX(-1rem);
+
 }
 
 .button {
@@ -40,6 +40,25 @@
   align-items: center;
   border-radius: 25px;
   font-weight: bold;
+}
+
+.btnClasses{
+  font: inherit;
+  border: 100px;
+  background-color: #2899a8;
+  padding: 0.75rem 1rem;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  border-radius: 25px;
+  font-weight: bold;
+  object-fit: cover;
+  color: white;
+}
+
+.btnClasses:hover,
+.btnClasses:active {
+  background-color: #b2f006;
 }
 
 .button:hover,

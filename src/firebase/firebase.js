@@ -2,7 +2,7 @@ import { initializeApp } from "firebase/app";
 import { getFirestore } from "firebase/firestore"
 
 const firebaseConfig = {
-  apiKey: import.meta.env.DB_PASSWORD ,
+  apiKey: import.meta.env.REACT_APP_DB_PASSWORD,
   authDomain: "proyecto-4-rest.firebaseapp.com",
   projectId: "proyecto-4-rest",
   storageBucket: "proyecto-4-rest.appspot.com",
@@ -13,6 +13,4 @@ const firebaseConfig = {
 // Initialize Firebase
 const app = initializeApp(firebaseConfig);
 
-const db = getFirestore(app)
-
-export{db}
+export const db = getFirestore(app);

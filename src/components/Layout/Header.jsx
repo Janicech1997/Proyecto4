@@ -38,15 +38,15 @@ const Header = () => {
     <>
       <header className={classes.header}>
         <h1>ZEN WEI</h1>
-        <button className={btnClasses} >
+        <button className={classes.btnClasses} >
           <Link to="/">
             <span className={classes.label} >Inicio</span>
           </Link>
         </button>
-        <button className={btnClasses} >
+        <button className={classes.btnClasses} >
           <Link to="/menu">Menu</Link>
         </button>
-        <button className={btnClasses} >
+        <button className={classes.btnClasses} >
           <Link to="/contacto">Contacto</Link>
         </button>
         <HeaderCartButton />

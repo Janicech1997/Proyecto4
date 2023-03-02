@@ -1,5 +1,5 @@
 import React from "react";
-import Contactos from "../Contactos/Contactos";
+import Contactos from "../Contactos/contactos";
 import classes from "./Inicio.module.css"
 
 const Inicio = () => {
