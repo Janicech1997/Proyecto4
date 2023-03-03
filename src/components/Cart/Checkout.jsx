@@ -1,9 +1,7 @@
 import { useRef, useState } from "react";
 
-// Styles
 import classes from "./Checkout.module.css";
 
-// Helper functions
 const isEmpty = (value) => value.trim() === "";
 const isFiveChars = (value) => value.trim().length === 5;
 

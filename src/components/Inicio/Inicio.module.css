@@ -15,8 +15,13 @@
     font-weight: 600;
     border: none;
     font-size: 18px;
-    cursor: pointer;
     margin-bottom: 40px;
     margin-top: 40px;
+    font-family: inherit;
+
 }
 
+.boton:hover,
+.boton:active {
+  background-color: #b2f006;
+}
