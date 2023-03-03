@@ -1,5 +1,5 @@
 import React from "react";
-import Contactos from "../Contactos/contactos";
+import Contactos from "../Contactos/Contactos";
 import classes from "./Inicio.module.css"
 import { Link } from "react-router-dom";
 
